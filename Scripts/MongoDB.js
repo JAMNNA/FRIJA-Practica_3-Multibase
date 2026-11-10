@@ -16,7 +16,6 @@ db.createCollection("brands", {
 
 // Índice Único
 db.brands.createIndex({ name: 1 }, { unique: true });
-name_1
 db.createCollection("categories", {
    validator: {
       $jsonSchema: {
@@ -33,7 +32,6 @@ db.createCollection("categories", {
 
 // Índice Único
 db.categories.createIndex({ name: 1 }, { unique: true });
-name_1
 db.createCollection("products", {
    validator: {
       $jsonSchema: {
@@ -57,7 +55,6 @@ db.createCollection("products", {
 db.products.createIndex({ brand_id: 1 });
 db.products.createIndex({ category_id: 1 });
 db.products.createIndex({ status: 1 });
-status_1
 use("Practica_3");
 
 // ============================================================

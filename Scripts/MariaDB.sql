@@ -60,5 +60,6 @@ USE practica3;
 
 
 ALTER TABLE users 
-ADD COLUMN favorite_product_idbranches VARCHAR(24) NULL AFTER branch_id;
+ADD COLUMN favorite_product_id VARCHAR(24) NULL AFTER branch_id;
 
+SHOW TABLES;
